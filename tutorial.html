@@ -1,16 +1,29 @@
 <html>
     <body>
-        <h1 id="header">Type Something</h1>
-        <input type="text" id="inp"/>
-        <button onclick="pressed()">Click</button>
-        <p id="output"></p>
-
         <script>
-            function pressed() {
-                var text = (document.getElementById("inp").value);
-                // .trim removes any white spaces //
-                output.innerHTML ="You Typed:   " + text.trim();
-            }
+            var tim = ["hello", 5, 4.6, "tim"];
+            
+            // access element "hello"
+            console.log(tim[0])
+
+            // replace 4.6 element with new element 
+            tim[2]="new element"
+            console.log(tim)
+
+            // check length of array
+            console.log(tim.length)
+
+            // remove last element from array
+            console.log(tim.pop())
+
+            // add element to end of array
+            console.log(tim.push)
+
+            // remove first element of array
+            console.log(tim.shift())
+
+            // sort the array
+            console.log(tim.sort)
         </script>
     </body>
 </html>
