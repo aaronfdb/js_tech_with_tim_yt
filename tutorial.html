@@ -1,17 +1,11 @@
 <html>
     <body>
         <script>
-            function findInArray (arr, value) {
-                for (var i = 0; i < arr.length; i++) {
-                    if (arr[i] == value) {
-                        return true
-                    }
-                }
-                return false
-            }
-            var arr = [1, 2, 5, 6, 7, "tim", true]
-            console.log(findInArray(arr, "tim3"))
-            // returns false as "tim3" does not appear in array
+            var _set = new set()
+            _set.add(3).add(5).add(7).add(3)
+            console.log(_set)
+            console.log(_set.has(5))
+            // returns true
         </script>
     </body>
 </html>
