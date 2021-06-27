@@ -1,11 +1,18 @@
 <html>
     <body>
         <script>
-            var _set = new set()
-            _set.add(3).add(5).add(7).add(3)
-            console.log(_set)
-            console.log(_set.has(5))
-            // returns true
+            var mp = new map()
+            str = "this is my new string hello"
+            
+            for(var letter of str) {
+                if(mp.has(letter)) {
+                    mp.set(letter, mp.get(letter)+1)
+                } else {
+                    mp.set(letter, 1)
+                }
+            }
+            console.log(mp.set("t"))
+            // returns 2
         </script>
     </body>
 </html>
